@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body{
+    background-color: rgb(156, 192, 227);
+}
+
+/* Navbar */
+
+nav{
+    background-color: rgb(29, 66, 101);
+    height: 70px;
+    width: 100%;
+    box-shadow: 2.5px 2.5px 2.5px black;
+}
+
+.nav--logo{
+    font-size: 20px;
+    padding: 20px;
+    line-height: 70px;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+.nav--items{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav--specs{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.nav--text{
+    text-transform: uppercase;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.nav--text:hover{
+    transition: 0.3s;
+    background: rgb(22, 48, 75);
+}
+
+.dropdown{
+    display: none;
+}
+
+.nav--text:checked ~ .dropdown{
+    display: block;
+}
+
+.dropdown--text:checked ~ .dropdown{
+    display: flex;
+    background-color: rgb(10, 133, 149);
+}
+
+.nav--checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#nav--check{
+    display: none;
+}
+
+/* @media (max-width: 1200px){
+    .nav--logo{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    nav .nav--items .nav--specs a{
+        font-size: 12px;
+    }
+} */
+
+@media (max-width: 1200px){
+    .nav--checkbtn{
+        display: block;
+        font-size: 23px;
+    }
+    .nav--items{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        margin-right: 0;
+        background: rgb(29, 66, 101);
+        text-align: right;
+        right: -100%;
+        transition: all 0.5s;
+    }
+    .nav--specs{
+        display: block;
+        line-height: 20px;
+        margin: 50px 0;
+        cursor: pointer;
+    }
+    .nav--text{
+        font-size: 15px;
+    }
+    .nav--text:hover{
+        background: none;
+        color: rgb(73, 103, 107);
+    }
+    #nav--check:checked ~ .nav--items{
+        right: 0;
+    }
+}
+
+/* Description */
+
+.description{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#d{
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+
+.desc--img{
+    width: 500px;
+    border-radius: 30px;
+}
+
+.desc--text{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+/* Services */
+
+.services{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.orthodont, .orthoped{
+    display: inline-block;
+    margin-right: 40px;
+    background-color: rgb(53, 166, 179);
+    font-size: 50px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.surg{
+    display: inline-block;
+    background-color: rgb(53, 166, 179);
+    font-size: 50px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.orthodont:hover, .orthoped:hover, .surg:hover{
+    transition: 0.5s;
+    background-color: rgb(43, 126, 136);
+    cursor: pointer;
+}
+
+/* Advantages */
+
+.advant{
+    margin-top: 150px;
+    background-color: rgb(29, 66, 101);
+    text-align: center;
+    font-size: 30px;
+}
+
+.adv--head{
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.advs{
+    color: lightblue;
+    padding-bottom: 50px;
+}
+
+#adv--sec{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.adv--margin{
+    margin-right: 200px;
+}
+
+/* Partners */
+
+.partners{
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+.partners--title{
+    font-size: 40px;
+    color: rgb(17, 79, 86);
+}
+
+/* Footer */
+
+footer{
+    color: white;
+    background-color: rgb(29, 66, 101);
+    text-align: center;
+}
+
+.footer--main{
+    padding: 40px;
+}
+
+.footer--cr{
+    background-color: rgb(19, 54, 86);
+}
+
+.cr{
+    padding: 20px;
+}
+
+section{
+    display: inline-block;
+}
+
+.socials{
+    margin-left: 80px;
+    margin-right: 360px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.contact{
+    margin-left: 360px;
+}
