@@ -6,9 +6,16 @@ export default function Footer(){
             <div className="footer--main">
                 <section className="socials">
                     <h4 className="soc--title">Հետևեք մեզ սոց ցանցերում</h4>
-                    <hr/>
+                    <hr id="soc--hr"/>
+
                     <div className="soc--icons">
-                        
+                        <a href="https://www.instagram.com/design_dentalstudio/">
+                            <img src="./images/instagram.png" className="imgs" id="insta"/>
+                        </a>
+
+                        <a href="https://www.facebook.com/design.dental.studio.yerevan">
+                            <img src="./images/facebook.png" className="imgs"/>
+                        </a>
                     </div>
                 </section>
 
