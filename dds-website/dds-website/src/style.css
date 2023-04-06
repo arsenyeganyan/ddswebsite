@@ -22,10 +22,12 @@ nav{
 
 .nav--logo{
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     line-height: 70px;
     font-weight: bold;
     color: lightgrey;
+    height: 70px;
+    width: 80px;
 }
 
 .nav--items{
@@ -137,8 +139,8 @@ nav{
 }
 
 .desc--img{
-    width: 500px;
-    border-radius: 30px;
+    width: 900px;
+    border-radius: 10px;
 }
 
 .desc--text{
@@ -198,13 +200,19 @@ nav{
     padding-bottom: 50px;
 }
 
-#adv--sec{
-    display: inline-block;
+.adv2, .adv3, .adv4{
     font-size: 25px;
+    display: inline-block;
 }
 
-.adv--margin{
-    margin-right: 200px;
+.adv2, .adv3{
+    margin-right: 150px;
+}
+
+#icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
 /* Partners */

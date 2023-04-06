@@ -3,7 +3,7 @@ import React from "react";
 export default function Description(){
     return(
         <div className="description">
-            <img id="d" className="desc--img" src="././images/startCover.jpg"/>
+            <img id="d" className="desc--img" src="././images/ddsStaff.jpg"/>
             <section >
                 <br/>
                 <br/>

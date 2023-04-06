@@ -8,6 +8,7 @@ export default function Parters(){
             <br/>
             <br/>
             <br/>
+            <img/>
         </div>
     )
 }
