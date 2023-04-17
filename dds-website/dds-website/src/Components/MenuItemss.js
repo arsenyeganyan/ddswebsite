@@ -7,8 +7,8 @@ export default function MenuItemss(props){
                 <>
                     {/* <button> */}
                     <li className="nav--specs" aria-haspopup='menu'>
-                        <a className="nav--text">
-                            {props.items.title}
+                        <a  className="nav--text" href={props.items.submenu.url}>
+                            {props.items.submenu.title}
                         </a>
                     </li>
                     {/* </button> */}

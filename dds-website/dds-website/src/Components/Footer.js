@@ -14,7 +14,7 @@ export default function Footer(){
                         </a>
 
                         <a href="https://www.facebook.com/design.dental.studio.yerevan">
-                            <img src="./images/facebook.png" className="imgs"/>
+                            <img src="./images/facebook.png" className="imgs" />
                         </a>
                     </div>
                 </section>

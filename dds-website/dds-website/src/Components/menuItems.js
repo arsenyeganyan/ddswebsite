@@ -1,7 +1,6 @@
 export default [
     {
         title: 'մեր մասին',
-        url: '/about',
         submenu: [
             {
                 title: 'մեր պատմությունը',
@@ -14,9 +13,6 @@ export default [
             {
                 title: 'մեր թիմը',
                 url: '/team'
-            },
-            {
-                title: 'գործընկերներ և գործունեություն'
             }
         ]
     },
