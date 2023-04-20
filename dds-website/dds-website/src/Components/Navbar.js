@@ -10,6 +10,12 @@ import Dropdown from "./Dropdown";
 
 export default function Navbar(){
 
+    // const [click, setClick] = useState(false);
+
+    // const handleClick = () => setClick(!click)
+
+    const path = window.location.pathname;
+
     return(
         <>
             <nav>
@@ -26,7 +32,7 @@ export default function Navbar(){
                 })}
                 </ul>
 
-                {/* <Link to='/'>boo</Link> */}
+                
             </nav>    
         </>
     )

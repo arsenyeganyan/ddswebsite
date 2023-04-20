@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import './style.css';
 
 import Navbar from "./Components/Navbar";
@@ -14,36 +14,36 @@ import WorkingHours from "./Components/Pages/WorkingHours";
 
 export default function App(){
   
-  let component;
-  switch (window.location.pathname) {
-    case "/":
-      component = <Main/>
-      break
+  // let component;
+  // switch (window.location.pathname) {
+  //   case "/":
+  //     component = <Main/>
+  //     break
 
-    case "/history":
-      component = <History/>
-      break
+  //   case "/history":
+  //     component = <History/>
+  //     break
     
-    case "/founders":
-      component = <Founders/>
-      break
+  //   case "/founders":
+  //     component = <Founders/>
+  //     break
 
-    case "/team":
-      component = <Team/>
-      break
+  //   case "/team":
+  //     component = <Team/>
+  //     break
 
-    case "/services":
-      component = <Servicess/>
-      break
+  //   case "/services":
+  //     component = <Servicess/>
+  //     break
 
-    case "/contact":
-      component = <Contact/>
-      break
+  //   case "/contact":
+  //     component = <Contact/>
+  //     break
 
-    case "/workinghours":
-      component = <WorkingHours/>
-      break
-  }
+  //   case "/workinghours":
+  //     component = <WorkingHours/>
+  //     break
+  // }
 
   return(
     <div>
