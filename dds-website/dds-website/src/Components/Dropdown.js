@@ -1,13 +1,32 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Dropdown(props){
+    
+    const style = {
+        color: "white",
+        textTransform: "uppercase"
+    }
+
     return(
-            <ul className="dropdown">
-                {props.submenus.map((submenu, index) => (
-                    <li className="nav--dropdown" key={index}>
-                        <a className="dropdown--text" href={submenu.url}>{submenu.title}</a>
-                    </li>
-                ))}
-            </ul>
+            <div className={props.show ? "drop" : "stay"}>
+                <ul className="dropdown">
+                    {props.submenus.map((submenu, index) => (
+                        
+                        <li
+                            className="nav--dropdown"
+                            key={index}
+                        >
+                            
+                            <Link className="dropdown--text" to={submenu.url} style={style}>
+                                {submenu.title}
+                            </Link>
+
+                        </li>
+
+                    ))}
+                </ul>
+            </div>
     )
 }

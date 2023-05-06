@@ -34,7 +34,7 @@ export default function Footer(){
                     <br/>
                     <h5 className="num">+374 95095509</h5>
                     <br/>
-                    <h5 className="email">design.dental.studio.yerevan@gmail.com</h5>
+                    <h5 className="emailz">design.dental.studio.yerevan@gmail.com</h5>
                 </section>
             </div>
 

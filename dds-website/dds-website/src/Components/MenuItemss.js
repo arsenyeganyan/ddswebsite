@@ -1,28 +1,47 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 
 import Dropdown from "./Dropdown";
 
 export default function MenuItemss(props){
+
+    const style = {
+        color: "white"
+    }
+
+    const [dropdown, setDropdown] = useState(false);
+
     return(
-            props.items.submenu ? (
-                <>
-                    <Link to={props.items.submenu.url}>
-                        <li className="nav--specs" aria-haspopup='menu'>
-                            <a  className="nav--text" href={props.items.submenu.url}>
-                                {props.items.title}
-                            </a>
-                        </li>
-                    </Link>
-                    <Dropdown submenus={props.items.submenu}/>
-                </>
-            ) : (
-                <Link>
-                    <li className="nav--specs">
-                        <a className="nav--text" href={props.items.url}>{props.items.title}</a>
+        <div className="menu--items">
+            {props.items.submenu ? (
+                <section className="drop--menu">
+
+                    <li className="nav--specs--d">
+                        <Link 
+                            id="nav--text" 
+                            to={props.items.submenu.url} 
+                            style={style}
+                            onClick={() => setDropdown(!dropdown)}
+                        >
+                            {props.items.title} 
+                            <FontAwesomeIcon icon={faSortDown} id="sort--down" />
+                        </Link>
                     </li>
-                </Link>
-            )
+                    
+                    <Dropdown
+                        submenus={props.items.submenu}
+                        show={dropdown}
+                    />
+                </section>
+            ) : (
+                    <li className="nav--specs">
+                        <Link id="nav--text" to={props.items.url} style={style}>
+                            {props.items.title}
+                        </Link>
+                    </li>
+            )}
+        </div>
     )
 }        
