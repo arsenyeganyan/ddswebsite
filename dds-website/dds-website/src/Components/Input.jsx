@@ -10,10 +10,7 @@ export default function Input(){
         e.preventDefault();
         console.log("Submitted.");
 
-        // const sub = { input };
-
         const form = document.querySelector('.input--form');
-
         const formData = new FormData(form);
         console.log(formData.get("email"));
 

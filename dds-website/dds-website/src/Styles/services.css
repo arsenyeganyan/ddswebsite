@@ -1,0 +1,17 @@
+/* Services page */
+
+.service--description{
+    margin: auto;
+    margin-top: 30px;
+}
+
+.info--title{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(43, 68, 93);
+}
+
+.info--desc--title{
+    margin-top: 110px;
+    margin-left: 70px;
+}

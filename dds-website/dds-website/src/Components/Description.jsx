@@ -5,9 +5,6 @@ export default function Description(){
         <div className="description">
             <img id="d" className="desc--img" src="././images/ddsStaff.jpg"/>
             <section >
-                <br/>
-                <br/>
-                <br/>
                 <hr/>
                 <p id="d" className="desc--text" >
                     Այցելելով Design Dental Studio` Դուք հնարավորություն եք ստանում օգտվելու ժամանակակից 
@@ -16,8 +13,6 @@ export default function Description(){
                     ծառայության արդյունավետությունը:<br/> Միավորելով մասնագետների տարիների փորձը և 
                     պրոֆեսիանլիզմը` ապահովում ենք հաճախորդի գոհունակությունը այցով:
                 </p>
-                <br/>
-                <br/>
                 <hr/>
             </section>
         </div>

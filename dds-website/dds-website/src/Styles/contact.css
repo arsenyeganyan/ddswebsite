@@ -1,0 +1,35 @@
+/* Contact Page */
+
+.contactTitle{
+    margin-top: 120px;
+    font-size: 45px;
+}
+
+#book{
+    margin-right: 15px;
+}
+
+.igLink, .fbLink{
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+}
+
+.phone, .email, .sm, .address{
+    font-size: 25px;
+}
+
+.sm a{
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.contactPage section{
+    display: block;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.contactTitle{
+    text-decoration: underline;
+}

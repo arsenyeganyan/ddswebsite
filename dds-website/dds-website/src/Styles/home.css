@@ -1,0 +1,167 @@
+/* Description */
+
+.description{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#d{
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+}
+
+.desc--img{
+    margin-top: 65px;
+    width: 900px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    box-shadow: 8px 8px 8px rgb(66, 66, 66);
+}
+
+.desc--text{
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(47, 66, 90);
+    margin-bottom: 40px;
+}
+
+/* Services */
+
+.services{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.orthodont, .orthoped{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 40px;
+    background-color: rgb(53, 166, 179);
+    font-size: 50px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.surg{
+    display: inline-block;
+    background-color: rgb(53, 166, 179);
+    margin-top: 20px;
+    font-size: 50px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.orthodont:hover, .orthoped:hover, .surg:hover{
+    transition: 0.5s ease-out;
+    background-color: rgb(43, 126, 136);
+    cursor: pointer;
+}
+
+/* Advantages */
+
+.advant{
+    margin-top: 150px;
+    background-color: rgb(29, 66, 101);
+    text-align: center;
+    font-size: 30px;
+}
+
+.adv--head{
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.advs{
+    color: lightblue;
+    padding-bottom: 50px;
+}
+
+.adv2, .adv3, .adv4{
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.adv2, .adv3{
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
+#icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Partners */
+
+.partners{
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+.partners--title{
+    font-size: 40px;
+    color: rgb(17, 79, 86);
+}
+
+/* Input field */
+
+.input--field{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.input--title{
+    font-size: 40px;
+    margin-bottom: 100px;
+    color: rgb(47, 66, 90);
+}
+
+.input{
+    background-color: rgb(60, 127, 190);
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#news--icon{
+    margin-right: 10px;
+}
+
+.input, .input--submit{
+    display: block;
+    margin: auto;
+    /* margin-top: 100px; */
+}
+
+.input--submit{
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(95, 144, 190);
+    border: none;
+    border-radius: 8px;
+    color: rgb(54, 54, 54);
+    margin-top: 40px;
+}
+
+.input--submit:hover{
+    background-color: rgb(78, 123, 166);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.input--submit:active{
+    background-color: rgb(64, 99, 133);
+}

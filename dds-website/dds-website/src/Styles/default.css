@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body{
+    background-color: rgb(170, 210, 242);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+nav{
+    top: 0;
+    background-color: rgb(180, 200, 221);
+    height: 90px;
+    width: 100%;
+    box-shadow: 2.5px 2.5px 2.5px rgb(55, 55, 55);
+    position: fixed;
+}
+
+.nav--logo{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 90px;
+    font-weight: bold;
+    height: 90px;
+    width: 140px;   
+}
+
+.nav--items{
+    float: right;
+    line-height: 90px;
+    font-size: 18px;
+}
+
+.nav--items ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.a, .nav--active{
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+}
+
+.nav--active{
+    color: rgb(59, 112, 156);
+}
+
+.nav--items ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+}
+
+.nav--items ul li ul.dropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: rgb(180, 200, 221);
+    box-shadow: 2.5px 2.5px 2.5px rgb(55, 55, 55);
+    width: 130%;
+}
+
+.nav--items ul li:hover{
+    transition: 0.2s;
+    background-color: rgb(173, 191, 211);
+}
+
+.nav--items ul li:hover ul.dropdown{
+    display: block;
+}
+
+/* Footer */
+
+footer{
+    color: white;
+    background-color: rgb(29, 66, 101);
+    text-align: center;
+}
+
+.footer--main{
+    padding: 40px;
+    margin: 0 20px 0 20px;
+}
+
+.footer--cr{
+    background-color: rgb(19, 54, 86);
+}
+
+.cr{
+    padding: 20px;
+}
+
+section{
+    display: inline-block;
+}
+
+.socials{
+    padding-left: 80px;
+    margin-right: 360px;
+}
+
+.icons{
+    font-size: 35px;
+    color: white;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.contact{
+    margin-left: 360px;
+}
+
+#def--hr{
+    margin-bottom: 15px;
+}
+
+.num{
+    margin-bottom: 20px;
+}
+
+.imgs{
+    width: 40px;
+}
+
+#insta{
+    margin-right: 15px;
+}

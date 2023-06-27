@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -18,7 +17,7 @@ export default function Contact(){
             </section>
 
             <section className="email">
-                Էլեյտրոնային նամակների համար գրել design.dental.studio.yerevan@gmail.com հասցեին
+                Էլեկտրոնային նամակների համար գրել design.dental.studio.yerevan@gmail.com հասցեին
             </section>
 
             <section className="sm">
