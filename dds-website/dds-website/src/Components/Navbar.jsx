@@ -5,19 +5,18 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar(){
     const [check, setCheck] = useState(false);
-    // const checking = () => setCheck(!check);
 
     return(
         <nav>
-            {/* <input 
+            <input 
                 type='checkbox' 
-                id="nav--check" 
-                onChange={checking}
+                className="nav--check" 
+                onChange={() => setCheck(!check)}
             />
             <label htmlFor='nav--check' className="nav--checkbtn">
                 {check ? <FontAwesomeIcon icon={faXmark} /> :
                 <FontAwesomeIcon icon={faBars} />}
-            </label> */}
+            </label>
             <NavLink to="/">
                 <img 
                     className="nav--logo" 
@@ -68,7 +67,7 @@ export default function Navbar(){
                         </NavLink>
                     </li>
                     <li>
-                    <NavLink 
+                        <NavLink 
                             to="/contact"
                             className={({ isActive }) => isActive ? "nav--active" : "a"}
                         >

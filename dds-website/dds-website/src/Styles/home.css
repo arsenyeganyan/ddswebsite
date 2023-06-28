@@ -12,10 +12,9 @@
 }
 
 .desc--img{
-    margin-top: 65px;
+    margin: 65px 50px 70px 50px;
     width: 900px;
     border-radius: 10px;
-    margin-bottom: 70px;
     box-shadow: 8px 8px 8px rgb(66, 66, 66);
 }
 
