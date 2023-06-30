@@ -10,7 +10,7 @@ export default function Advantages(){
             <div className="advs">
                 <section className="adv2">
                     <FontAwesomeIcon icon={faStethoscope} id="icon"/>
-                    <h3>Նորգույն տեխնոլոգիայի կիրառում</h3>
+                    <h3>Նորագույն տեխնոլոգիայի կիրառում</h3>
                 </section>
 
                 <section className="adv2">

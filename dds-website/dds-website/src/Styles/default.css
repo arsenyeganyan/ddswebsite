@@ -15,23 +15,28 @@ body{
 
 /* Navbar */
 
+:root{
+    --height: 90px;
+    --rightChecked: -29px;
+}
+
 nav{
     top: 0;
     background-color: rgb(180, 200, 221);
-    height: 90px;
+    height: var(--height);
     width: 100%;
     box-shadow: 2.5px 2.5px 2.5px rgb(55, 55, 55);
     position: fixed;
 }
 
-.nav--check{
+#nav--check{
     display: none;
 }
 
 .nav--logo{
     font-size: 20px;
     padding: 10px;
-    line-height: 90px;
+    line-height: var(--height);
     font-weight: bold;
     height: 90px;
     width: 140px;   
@@ -45,91 +50,107 @@ nav{
     width: 130%;
 }
 
-@media(width > 952px){
+.nav--checkbtn{
+    display: none;
+}
+
+.nav--items{
+    float: right;
+    line-height: var(--height);
+    font-size: 18px;
+}
+
+.nav--items ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.a, .nav--active{
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+}
+
+.nav--active{
+    color: rgb(59, 112, 156);
+}
+
+.nav--items ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+}
+
+.nav--items ul li ul.dropdown{
+    position: absolute;
+}
+
+.nav--items ul li:hover{
+    transition: 0.2s;
+    background-color: rgb(173, 191, 211);
+}
+
+.nav--items ul li:hover ul.dropdown{
+    display: block;
+}
+
+@media only screen and (max-width: 952px){
     .nav--checkbtn{
-        display: none;
+        display: block;
+        float: right; 
+        line-height: var(--height);
+        font-size: 30px;
+        margin-right: 10px;
+        cursor: pointer;
     }
 
     .nav--items{
+        right: var(--rightChecked);
+        right: calc(var(--rightChecked) * 20);
+        height: max-content;
+        flex-direction: column;
+        width: 50%;
         float: right;
-        line-height: 90px;
-        font-size: 18px;
-    }
-
-    .nav--items ul li{
-        display: inline-block;
+        background-color: rgb(180, 200, 221);
         position: relative;
+        top: var(--height);
+        transition: all 0.3s;
     }
 
-    .a, .nav--active{
-        display: block;
-        text-align: center;
-        margin-right: 10px;
-        margin-left: 10px;
-        color: black;
-        text-align: center;
+    
+    .nav--items ul li ul.dropdown{
+        width: 100%;
+        right: 0; 
+        z-index: 2;
+        position: absolute;
+        height: max-content;
     }
-
-    .nav--active{
-        color: rgb(59, 112, 156);
-    }
-
+    
     .nav--items ul li ul.dropdown li{
         display: block;
-        text-align: center;
+        position: relative;
+        text-align: right;
     }
-
-    .nav--items ul li ul.dropdown{
-        position: absolute;
-    }
-
-    .nav--items ul li:hover{
-        transition: 0.2s;
-        background-color: rgb(173, 191, 211);
-    }
-
-    .nav--items ul li:hover ul.dropdown{
-        display: block;
-    }
-
-
-}
-
-@media(width < 952px){
-    .nav--items{
-        display: block;
-    }
-
-    .nav--checkbtn{
-        font-size: 30px;
-        line-height: 90px;
-        float: right;
-        margin-right: 30px;
-        cursor: pointer;
-        display: block;
-    }
-
+    
     .nav--items ul{
-        /* position: fixed; */
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(180, 200, 221);
-        top: 80px;
-        left: 0;
-        /* float: right; */
-    }
-
-    .nav--items ul > li{
         display: block;
-        position: fixed;
-        flex-direction: row;
+        width: 100%;
+        box-shadow: 2.5px 2.5px 2.5px rgb(55, 55, 55);
     }
-
-    .nav--items ul li ul.dropdown{
+    
+    .nav--items ul li{
+        margin: auto;
+        width: 100%;
         position: relative;
     }
-}
 
+    #nav--check:checked ~ .nav--items{
+        transition: all 0.3s;
+        right: var(--rightChecked);
+    }
+}
 
 /* Footer */
 
@@ -142,6 +163,10 @@ footer{
 .footer--main{
     padding: 40px;
     margin: 0 20px 0 20px;
+}
+
+.footer--main section{
+    margin-bottom: 30px;
 }
 
 .footer--cr{

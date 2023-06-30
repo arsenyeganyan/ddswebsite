@@ -4,7 +4,7 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 export default function WorkingHours(){
     return(
-        <div className="workinghours">
+        <div className="working--hours">
                 <h1 className="whTitle">
                     <FontAwesomeIcon icon={faClock} id="clock"/>
                     Աշխատանքային գրաֆիկ

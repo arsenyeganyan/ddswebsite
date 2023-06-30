@@ -7,20 +7,21 @@
 
 #d{
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 70px;
     vertical-align: middle;
+    margin-left: 70px;
 }
 
 .desc--img{
-    margin: 65px 50px 70px 50px;
-    width: 900px;
+    margin: 65px 0 70px 0;
+    width: 40%;
     border-radius: 10px;
     box-shadow: 8px 8px 8px rgb(66, 66, 66);
 }
 
 .desc--text{
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(47, 66, 90);
     margin-bottom: 40px;
 }
@@ -34,8 +35,7 @@
 
 .orthodont, .orthoped{
     display: inline-block;
-    margin-top: 20px;
-    margin-right: 40px;
+    margin: 20px 20px 0 20px;
     background-color: rgb(53, 166, 179);
     font-size: 50px;
     box-shadow: 5px 5px 5px black;
@@ -46,7 +46,7 @@
 .surg{
     display: inline-block;
     background-color: rgb(53, 166, 179);
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
     font-size: 50px;
     box-shadow: 5px 5px 5px black;
     border-radius: 8px;
@@ -77,17 +77,19 @@
 .advs{
     color: lightblue;
     padding-bottom: 50px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.advs section{
+    margin-bottom: 40px;
+    justify-content: center;
 }
 
 .adv2, .adv3, .adv4{
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
-    margin-top: 30px;
-}
-
-.adv2, .adv3{
-    margin-top: 30px;
-    margin-right: 150px;
+    margin: 30px 60px 0 60px;
 }
 
 #icon{

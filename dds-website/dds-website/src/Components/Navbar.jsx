@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(){
     const [check, setCheck] = useState(false);
-
+    
     return(
         <nav>
             <input 
                 type='checkbox' 
-                className="nav--check" 
+                id="nav--check" 
                 onChange={() => setCheck(!check)}
             />
-            <label htmlFor='nav--check' className="nav--checkbtn">
+            <label htmlFor="nav--check" className="nav--checkbtn">
                 {check ? <FontAwesomeIcon icon={faXmark} /> :
                 <FontAwesomeIcon icon={faBars} />}
             </label>
             <NavLink to="/">
-                <img 
+                <img
                     className="nav--logo" 
                     src="././images/design dental eng-8.png"
                 />
